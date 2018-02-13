@@ -1,0 +1,21 @@
+"HHPhotoBrowserCameraText" = "Camera";
+"HHPhotoBrowserAblumText" = "Album";
+"HHPhotoBrowserCancelText" = "Cancel";
+
+"HHPhotoBrowserOriginalText" = "Original";
+"HHPhotoBrowserDoneText" = "Send";
+"HHPhotoBrowserOKText" = "OK";
+
+"HHPhotoBrowserPhotoText" = "Photos";
+"HHPhotoBrowserPreviewText" = "Preview";
+
+"HHPhotoBrowserLoadingText" = "loading，waiting please";
+"HHPhotoBrowserHandleText" = "waiting...";
+
+"HHPhotoBrowserSaveImageErrorText" = "Save photo to ablum failed";
+"HHPhotoBrowserMaxSelectCountText" = "Max select count: %ld";
+
+"HHPhotoBrowserNoCameraAuthorityText" = "Please allow %@ to access your device's camera in \"Settings\"->\"Privacy\"->\"Camera\"";
+"HHPhotoBrowserNoAblumAuthorityText" = "Allow %@ to access your ablum in \"Settings\"->\"Privacy\"->\"Photos\"";
+
+"HHPhotoBrowseriCloudPhotoText" = "Retry after download in ablum";

@@ -1,0 +1,35 @@
+"HHPhotoBrowserCameraText" = "拍照";
+"HHPhotoBrowserAblumText" = "相册";
+"HHPhotoBrowserCancelText" = "取消";
+
+"HHPhotoBrowserOriginalText" = "原图";
+"HHPhotoBrowserDoneText" = "发送";
+"HHPhotoBrowserOKText" = "确定";
+
+"HHPhotoBrowserPhotoText" = "照片";
+"HHPhotoBrowserPreviewText" = "预览";
+
+"HHPhotoBrowserLoadingText" = "加载中，请稍后";
+"HHPhotoBrowserHandleText" = "正在处理...";
+
+"HHPhotoBrowserSaveImageErrorText" = "保存图片到相册失败";
+"HHPhotoBrowserMaxSelectCountText" = "最多只能选择%ld张图片";
+
+"HHPhotoBrowserNoCameraAuthorityText" = "请在iPhone的\"设置-隐私-相机\"选项中，允许%@访问你的相机";
+"HHPhotoBrowserNoAblumAuthorityText" = "请在iPhone的\"设置-隐私-相机\"选项中，允许%@访问你的相册";
+
+"HHPhotoBrowseriCloudPhotoText" = "请在系统相册中下载到本地后重新尝试";
+
+"HHPhotoBrowserCameraRoll" = "所有照片";
+"HHPhotoBrowserPanoramas" = "全景照片";
+"HHPhotoBrowserVideos" = "视频";
+"HHPhotoBrowserFavorites" = "个人收藏";
+"HHPhotoBrowserTimelapses" = "延时摄影";
+"HHPhotoBrowserRecentlyAdded" = "最近添加";
+"HHPhotoBrowserBursts" = "连拍快照";
+"HHPhotoBrowserSlomoVideos" = "慢动作";
+"HHPhotoBrowserSelfPortraits" = "自拍";
+"HHPhotoBrowserScreenshots" = "屏幕快照";
+"HHPhotoBrowserDepthEffect" = "人像";
+"HHPhotoBrowserLivePhotos" = "Live Photo";
+"HHPhotoBrowserAnimated" = "动图";
