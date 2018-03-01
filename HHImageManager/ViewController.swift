@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  HHImagePicker
+//  HHImageManager
 //
-//  Created by Sherlock on 11/02/2018.
+//  Created by Sherlock on 01/03/2018.
 //  Copyright © 2018 daHuiGe. All rights reserved.
 //
 
@@ -49,12 +49,11 @@ class ViewController: UIViewController {
             self.lastSelectModels = selectPhotoModels
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
