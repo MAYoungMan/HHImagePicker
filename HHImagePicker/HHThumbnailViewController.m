@@ -15,6 +15,7 @@
 #import "HHShowBigImgViewController.h"
 #import "HHPhotoBrowser.h"
 #import "ToastUtils.h"
+#import "UIColor+CarExtension.h"
 
 @interface AddCameraCell : UICollectionViewCell
 
@@ -89,14 +90,14 @@ static NSString * const cameraId = @"cameraCell";
         self.btnPreView.enabled = YES;
         self.btnDone.enabled = YES;
         //[self.btnDone setTitle:[NSString stringWithFormat:@"%@(%ld)", GetLocalLanguageTextValue(HHPhotoBrowserDoneText), self.arraySelectPhotos.count] forState:UIControlStateNormal];
-        [self.btnOriginalPhoto setTitleColor:[UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0] forState:UIControlStateNormal];
-        [self.btnPreView setTitleColor:[UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [self.btnOriginalPhoto setTitleColor:[UIColor colorWithHex:COLOR_MAIN_THEME] forState:UIControlStateNormal];
+        [self.btnPreView setTitleColor:[UIColor colorWithHex:COLOR_MAIN_THEME] forState:UIControlStateNormal];
         //self.btnDone.backgroundColor = kRGB(80, 180, 234);
         //[self.btnDone setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [self.btnDone setTitleColor:[UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [self.btnDone setTitleColor:[UIColor colorWithHex:COLOR_MAIN_THEME] forState:UIControlStateNormal];
         [self.doneNumber setTitle:[NSString stringWithFormat:@"%ld",self.arraySelectPhotos.count] forState:UIControlStateNormal];
         self.doneNumber.enabled = YES;
-        [self.doneNumber setBackgroundImage:[self imageWithColor:[UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0]] forState:UIControlStateNormal];
+        [self.doneNumber setBackgroundImage:[self imageWithColor:[UIColor colorWithHex:COLOR_MAIN_THEME]] forState:UIControlStateNormal];
     } else {
         self.btnOriginalPhoto.enabled = NO;
         self.btnPreView.enabled = NO;

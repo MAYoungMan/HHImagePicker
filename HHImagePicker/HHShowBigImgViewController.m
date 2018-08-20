@@ -13,6 +13,7 @@
 #import "HHSelectPhotoModel.h"
 #import "HHPhotoTool.h"
 #import "ToastUtils.h"
+#import "UIColor+CarExtension.h"
 
 @interface HHShowBigImgViewController () <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 {
@@ -103,7 +104,7 @@
 
 - (void)initBottomView
 {
-    _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44 - kHomeIndicator, kViewWidth, 44)];
+    _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44 - kHomeIndicator, kViewWidth, 44 + kHomeIndicator)];
     _bottomView.backgroundColor = kRGB(51, 51, 51);
     
     _btnOriginalPhoto = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -112,7 +113,7 @@
     [_btnOriginalPhoto setTitle:GetLocalLanguageTextValue(HHPhotoBrowserOriginalText) forState:UIControlStateNormal];
     _btnOriginalPhoto.titleLabel.font = [UIFont systemFontOfSize:15];
     [_btnOriginalPhoto setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-    [_btnOriginalPhoto setTitleColor:[UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0] forState: UIControlStateSelected];
+    [_btnOriginalPhoto setTitleColor:[UIColor colorWithHex:COLOR_MAIN_THEME] forState: UIControlStateSelected];
     UIImage *normalImg = [UIImage imageNamed:@"btn_original_circle.png"];
     UIImage *selImg = [UIImage imageNamed:@"btn_original_circle_on.png"];
     [_btnOriginalPhoto setImage:normalImg forState:UIControlStateNormal];
@@ -134,7 +135,7 @@
     
     self.labPhotosBytes = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_btnOriginalPhoto.frame)+5, 7, 80, 30)];
     self.labPhotosBytes.font = [UIFont systemFontOfSize:15];
-    self.labPhotosBytes.textColor = [UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0];
+    self.labPhotosBytes.textColor = [UIColor colorWithHex:COLOR_MAIN_THEME];
     //改
     if (_isSelectOriginalPhoto) {
         self.labPhotosBytes.hidden = NO;
@@ -151,7 +152,7 @@
     _btnDone.layer.masksToBounds = YES;
     _btnDone.layer.cornerRadius = 3.0f;
     [_btnDone setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_btnDone setBackgroundColor:[UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0]];
+    [_btnDone setBackgroundColor:[UIColor colorWithHex:COLOR_MAIN_THEME]];
     [_btnDone addTarget:self action:@selector(btnDone_Click:) forControlEvents:UIControlEventTouchUpInside];
     [_bottomView addSubview:_btnDone];
     

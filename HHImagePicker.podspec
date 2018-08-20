@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHImagePicker"
-  s.version      = "1.0.0"
+  s.version      = "0.0.1"
   s.summary      = "A simple iOS photo browser."
 
   # This description is used to generate tags and improve search results.
@@ -91,8 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "PhotoBrowser/*.{h,m}"
-  s.exclude_files = "PhotoBrowser/resource/*.{png,xib,nib,bundle}"
+  s.source_files  = "HHImagePicker/*.{h,m}", "HHImagePicker/**/*.{xib}"
+  s.resource  = "HHImagePicker/**/**/*.png", "HHImagePicker/**/*.bundle"
+
+  # s.source_files  = "Sources/**/*.{swift,xib}"
+  # s.resource  = "Sources/**/*.xcassets", "Sources/en.lproj", "Sources/zh-Hans.lproj"
 
   # s.public_header_files = "Classes/**/*.h"
 

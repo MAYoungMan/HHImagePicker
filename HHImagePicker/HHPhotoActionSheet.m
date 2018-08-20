@@ -17,6 +17,7 @@
 #import "HHPhotoBrowser.h"
 #import "ToastUtils.h"
 #import <objc/runtime.h>
+#import "UIColor+CarExtension.h"
 
 typedef void (^handler)(NSArray<UIImage *> *selectPhotos, NSArray<HHSelectPhotoModel *> *selectPhotoModels);
 
@@ -296,7 +297,7 @@ static char RelatedKey;
 {
     if (self.arraySelectPhotos.count > 0) {
         [self.btnCamera setTitle:[NSString stringWithFormat:@"%@(%ld)", GetLocalLanguageTextValue(HHPhotoBrowserDoneText), self.arraySelectPhotos.count] forState:UIControlStateNormal];
-        [self.btnCamera setTitleColor:[UIColor colorWithRed:35/255.0 green:209/255.0 blue:227/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [self.btnCamera setTitleColor:[UIColor colorWithHex:COLOR_MAIN_THEME] forState:UIControlStateNormal];
     } else {
         [self.btnCamera setTitle:GetLocalLanguageTextValue(HHPhotoBrowserCameraText) forState:UIControlStateNormal];
         [self.btnCamera setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
